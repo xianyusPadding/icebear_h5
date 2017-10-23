@@ -1,0 +1,18 @@
+{
+  "studyVideo":{
+    "title": "学院视频",
+    "img": "https://icebear.me/Public/Mobile/images/home_academy.png"
+  },
+  "offerBBS":{
+    "title": "求职BBS",
+    "img": "https://icebear.me/Public/Mobile/images/home_bbs.png"
+  },
+  "enterprise":{
+    "title": "名企求职",
+    "img": "https://icebear.me/Public/Mobile/images/home_job.png"
+  },
+  "wikipedia":{
+    "title": "在线百科",
+    "img": "https://icebear.me/Public/Mobile/images/home_baike.png"
+  }
+}

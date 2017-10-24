@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Navbar from '@/components/navbar'
+import Index from '@/components/index'
 import StudyVideo from '@/components/studyVideo'
 import OfferBBS from '@/components/offerBBS'
 import Enterprise from '@/components/enterprise'
@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Navbar',
-      component: Navbar
+      name: 'Index',
+      component: Index
     },
     {
       path: '/studyVideo',

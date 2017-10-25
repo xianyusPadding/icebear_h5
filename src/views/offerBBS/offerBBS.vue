@@ -1,14 +1,10 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <h1>求职BBS</h1>
 </template>
 
 <script type='text/ecmascript-6'>
-  export default {
-    name: 'app'
-  }
 </script>
 
 <style lang='scss' scoped='' type='text/css'>
+
 </style>

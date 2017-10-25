@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/index'
-import StudyVideo from '@/components/studyVideo'
-import OfferBBS from '@/components/offerBBS'
-import Enterprise from '@/components/enterprise'
-import Wikipedia from '@/components/wikipedia'
+import Index from '@/views/index/index'
+import StudyVideo from '@/views/studyVideo/studyVideo'
+import OfferBBS from '@/views/offerBBS/offerBBS'
+import Enterprise from '@/views/enterprise/enterprise'
+import Wikipedia from '@/views/wikipedia/wikipedia'
 
 Vue.use(Router)
 

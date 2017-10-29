@@ -45,6 +45,19 @@ const hotMiddleware = require('webpack-hot-middleware')(compiler, {
 
 // enable hot-reload and state-preserving
 // compilation error display
+const appDate = require('../src/data/data.json')
+const data = appDate;
+const apiRoutes = express.Router()
+
+apiRoutes.get('/data', function (req, res) {
+  res.json({
+    errno: 0,
+    data: data
+  })
+})
+
+app.use('/api', apiRoutes)
+
 app.use(hotMiddleware)
 
 // proxy api requests

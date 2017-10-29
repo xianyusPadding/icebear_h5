@@ -7,7 +7,6 @@
 
 <script type='text/ecmascript-6'>
   import mHeader from '@/components/mHeader/mHeader'
-  import {getData} from '@/api/index.js'
 
   export default {
     data () {
@@ -19,15 +18,8 @@
       mHeader
     },
     created () {
-      this._getData()
     },
     methods: {
-      _getData () {
-        getData().then((res) => {
-          this.index = res.data
-          console.log(res.data)
-        })
-      }
     }
   }
 </script>

@@ -13,4 +13,4 @@ code, kbd, pre, samp, tt { font-family: Consolas,"Courier New", Courier, monospa
 address, cite, dfn, em, var,i {font-style: normal;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {content:"";content: none;}
-a{text-decoration: none}
+a{text-decoration: none; color: #000}

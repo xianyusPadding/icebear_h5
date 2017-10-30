@@ -1,18 +1,50 @@
 {
   "studyVideo":{
     "title": "学院视频",
-    "img": "https://icebear.me/Public/Mobile/images/home_academy.png"
+    "img": "https://icebear.me/Public/Mobile/images/home_academy.png",
+    "iconClass": "el-icon-view",
+    "url": "./#/studyVideo",
+    "subject": {
+      "general": [
+        {
+          "title": "职业规划课"
+        },
+        {
+          "title": "简历系列课"
+        },
+        {
+          "title": "面试系列课"
+        }
+      ],
+      "industry": [
+        {
+          "title": "产品经理基础课"
+        },
+        {
+          "title": "新媒体运营系统课"
+        },
+        {
+          "title": "互联网运营基础课"
+        }
+      ]
+    }
   },
   "offerBBS":{
     "title": "求职BBS",
-    "img": "https://icebear.me/Public/Mobile/images/home_bbs.png"
+    "img": "https://icebear.me/Public/Mobile/images/home_bbs.png",
+    "iconClass": "el-icon-news",
+    "url": "./#/offerBBS"
   },
   "enterprise":{
     "title": "名企求职",
-    "img": "https://icebear.me/Public/Mobile/images/home_job.png"
+    "img": "https://icebear.me/Public/Mobile/images/home_job.png",
+    "iconClass": "el-icon-menu",
+    "url": "./#/enterprise"
   },
   "wikipedia":{
     "title": "在线百科",
-    "img": "https://icebear.me/Public/Mobile/images/home_baike.png"
+    "img": "https://icebear.me/Public/Mobile/images/home_baike.png",
+    "iconClass": "el-icon-tickets",
+    "url": "./#/wikipedia"
   }
 }

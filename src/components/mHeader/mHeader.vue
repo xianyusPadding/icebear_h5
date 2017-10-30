@@ -64,6 +64,7 @@
     .menu{
       border-bottom: 1px solid #eee;
       z-index: 2;
+      background-color: #fff;
       li{
         width: 33%;
         margin-top: 10px;

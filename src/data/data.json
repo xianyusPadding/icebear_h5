@@ -7,24 +7,30 @@
     "subject": {
       "general": [
         {
-          "title": "职业规划课"
+          "title": "职业规划课",
+          "img": "https://icebear-1-001.oss-cn-shenzhen.aliyuncs.com/uploads/picture/2017-02-13/58a1754466fff.png"
         },
         {
-          "title": "简历系列课"
+          "title": "简历系列课",
+          "img": "https://icebear-1-001.oss-cn-shenzhen.aliyuncs.com/uploads/picture/2017-03-31/58de21c19c724.png"
         },
         {
-          "title": "面试系列课"
+          "title": "面试系列课",
+          "img": "https://icebear-1-001.oss-cn-shenzhen.aliyuncs.com/uploads/picture/2017-02-18/58a80d40e504d.png"
         }
       ],
       "industry": [
         {
-          "title": "产品经理基础课"
+          "title": "产品经理基础课",
+          "img": "https://icebear-1-001.oss-cn-shenzhen.aliyuncs.com/uploads/picture/2016-12-14/5850bef1c16f5.png"
         },
         {
-          "title": "新媒体运营系统课"
+          "title": "新媒体运营系统课",
+          "img": "https://icebear-1-001.oss-cn-shenzhen.aliyuncs.com/uploads/picture/2016-12-06/5846846fe9eaf.png"
         },
         {
-          "title": "互联网运营基础课"
+          "title": "互联网运营基础课",
+          "img": "https://icebear-1-001.oss-cn-shenzhen.aliyuncs.com/uploads/picture/2016-12-05/58455a08112d6.png"
         }
       ]
     }

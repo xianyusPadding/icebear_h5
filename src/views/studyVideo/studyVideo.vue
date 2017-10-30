@@ -79,8 +79,8 @@
       .item{
         position: relative;
         img{
-          width:100%;
-          height: 150px;
+          width: 100%;
+          height:150px;
           margin-bottom: 5px;
         }
         .item-title{

@@ -9,7 +9,7 @@
       <ul>
         <li v-for="(item, index) in data" v-show="item.title != dataItem.title">
           <a :href="item.url">
-            <i class="el-icon-menu"></i>
+            <i :class="item.iconClass"></i>
             <p>{{item.title}}</p>
           </a>
         </li>
@@ -62,6 +62,7 @@
       }
     }
     .menu{
+      position: relative;
       border-bottom: 1px solid #eee;
       z-index: 2;
       background-color: #fff;

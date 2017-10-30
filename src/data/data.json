@@ -2,7 +2,7 @@
   "studyVideo":{
     "title": "学院视频",
     "img": "https://icebear.me/Public/Mobile/images/home_academy.png",
-    "iconClass": "el-icon-service",
+    "iconClass": "el-icon-caret-right",
     "url": "./#/studyVideo",
     "subject": {
       "general": [

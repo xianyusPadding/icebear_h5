@@ -5,16 +5,19 @@
       <h3>{{dataItem.title}}</h3>
       <i class="el-icon-arrow-down"></i>
     </a>
-    <div class="menu" v-show="dropShow">
-      <ul>
-        <li v-for="(item, index) in data" v-show="item.title != dataItem.title">
-          <a :href="item.url">
-            <i :class="item.iconClass"></i>
-            <p>{{item.title}}</p>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <transition name="fade">
+      <div class="menu" v-show="dropShow">
+        <ul>
+          <li v-for="(item, index) in data" v-show="item.title != dataItem.title">
+            <a :href="item.url">
+              <i :class="item.iconClass"></i>
+              <p>{{item.title}}</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </transition>
+    
   </div>
 </template>
 
@@ -60,6 +63,12 @@
         display: inline;
         font-size: 14px;
       }
+    }
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity .5s
+    }
+    .fade-enter, .fade-leave-to {
+      opacity: 0
     }
     .menu{
       position: relative;

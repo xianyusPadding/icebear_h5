@@ -1,0 +1,28 @@
+{
+  "name": "feilong",
+  "avater": "https://icebear-1-001.oss-cn-shenzhen.aliyuncs.com/uploads/head/2017-03-16/58c9f7db5462c.png",
+  "vip": 1,
+  "integal": 800,
+  "about": {
+    "signIn": {
+      "title": "每日签到",
+      "code": 0
+    },
+    "makeIntegral": {
+      "title": "如何赚积分"
+    },
+    "useIntegral": {
+      "title": "积分可以做什么"
+    },
+    "baseData": {
+      "title": "基本资料"
+    },
+    "bindSetting": {
+      "title": "绑定设置"
+    },
+    "messageCenter": {
+      "title": "消息中心"
+    }
+
+  }
+}

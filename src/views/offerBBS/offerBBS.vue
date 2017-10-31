@@ -4,16 +4,16 @@
     <div class="tab">
       <el-tabs v-model="activeName" tab-position="bottom">
         <el-tab-pane label="首页" name="0">
-          
+          <bbs-index></bbs-index>
         </el-tab-pane>
-        <el-tab-pane label="我的提问" name="0">
-          
+        <el-tab-pane label="我的提问" name="1">
+          <bbs-question></bbs-question>
         </el-tab-pane>
-        <el-tab-pane label="我的收藏" name="0">
-          
+        <el-tab-pane label="我的收藏" name="2">
+          <bbs-collect></bbs-collect>
         </el-tab-pane>
-        <el-tab-pane label="首页" name="0">
-          
+        <el-tab-pane label="个人中心" name="3">
+          <per-center></per-center>
         </el-tab-pane>
       </el-tabs>
     </div>
@@ -22,6 +22,10 @@
 
 <script type='text/ecmascript-6'>
   import mHeader from '@/components/mHeader/mHeader'
+  import bbsIndex from '@/components/bbsIndex/bbsIndex'
+  import bbsQuestion from '@/components/bbsQuestion/bbsQuestion'
+  import bbsCollect from '@/components/bbsCollect/bbsCollect'
+  import perCenter from '@/components/perCenter/perCenter'
   import {getData} from 'api/data'
   import {ERR_OK} from 'api/config'
 
@@ -35,7 +39,11 @@
       }
     },
     components: {
-      mHeader
+      mHeader,
+      bbsIndex,
+      bbsQuestion,
+      bbsCollect,
+      perCenter
     },
     created () {
       this._getData()
@@ -58,23 +66,14 @@
   #offerBBS{
     .tab{
       .el-tabs__header{
-        width: 100%;
         position: fixed;
         bottom: 0px;
         margin-bottom: 0px;
-        text-align: center;
         border-top: 1px solid #eee;
         margin-top: 5px;
-        .el-tabs__nav{
-          width: 100%;
-          .el-tabs__item{
-            width: 25%;
-            color: #B89D86;
-          }
-          .el-tabs__item.is-active{
-            color: #482929
-          }
-        } 
+        .el-tabs__item{
+          width: 25%;
+        }
       }
     }
   }

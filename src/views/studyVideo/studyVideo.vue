@@ -1,29 +1,25 @@
 <template>
   <div id="studyVideo">
     <m-header :dataItem='studyVideo' :data='data'></m-header>
-    <el-tabs v-model="activeName" @tab-click="handleClick">
-      <el-tab-pane label="通用课程" name="first">
-        <ul class="general-Wrapper">
-          <li v-for="item in studyVideo.subject.general" class="item"><a :href="studyVideo.url">
-            <img :src='item.img' alt="">
-            <span class="item-title">{{item.title}}</span>
-          </a></li>
-        </ul>
-      </el-tab-pane>
-      <el-tab-pane label="行业课程" name="second">
-        <ul class="industry-Wrapper">
-          <li v-for="item in studyVideo.subject.industry" class="item"><a :href="studyVideo.url">
-            <img :src='item.img' alt="">
-            <span class="item-title">{{item.title}}</span>
-          </a></li>
-        </ul>
-      </el-tab-pane>
-    </el-tabs>
+    <div class="tab">
+      <el-tabs v-model="activeName" tab-position="bottom">
+        <el-tab-pane label="全部课程" name="0">
+          <sv-all-project :studyVideo='studyVideo'></sv-all-project>
+        </el-tab-pane>
+        <el-tab-pane label="我的课程" name="1">
+        </el-tab-pane>
+        <el-tab-pane label="个人中心" name="2">
+          <per-center></per-center>
+        </el-tab-pane>
+      </el-tabs>
+    </div>
   </div>
 </template>
 
 <script type='text/ecmascript-6'>
   import mHeader from '@/components/mHeader/mHeader'
+  import svAllProject from '@/components/svAllProject/svAllProject'
+  import perCenter from '@/components/perCenter/perCenter'
   import {getData} from 'api/data'
   import {ERR_OK} from 'api/config'
 
@@ -31,12 +27,13 @@
     data () {
       return {
         studyVideo: {},
-        data: {},
-        activeName: 'first'
+        data: {}
       }
     },
     components: {
-      mHeader
+      mHeader,
+      svAllProject,
+      perCenter
     },
     created () {
       this._getStudyVideo()
@@ -66,43 +63,17 @@
 
 <style lang='scss' type='text/css'>
   #studyVideo{
-    .el-tabs{
-      // margin-top: 44px;
-    }
-    .el-tabs__header{
-      margin-bottom: 5px;
-    }
-    .el-tabs__nav{
-      width: 100%;
-      .el-tabs__item{
-        width: 50%;
-        text-align: center;
-        color: #B89D86;
-        font-weight: 700;
-      }
-      .el-tabs__item.is-active{
-        color: #482929
-      }
-    }
-    .general-Wrapper,.industry-Wrapper{
-      background-color: #F6EBD6;
-      .item{
-        position: relative;
-        img{
-          width: 100%;
-          height:150px;
-          margin-bottom: 5px;
+    .tab{
+      .el-tabs__header{
+        position: fixed;
+        bottom: 0px;
+        margin-bottom: 0px;
+        border-top: 1px solid #eee;
+        margin-top: 5px;
+        .el-tabs__item{
+          width: 33%;
         }
-        .item-title{
-          position: absolute;
-          top:50%;
-          left:50%;
-          color: #fff;
-          font-size: 25px;
-          -webkit-transform: translate(-50%, -50%);
-        }
-      } 
-      
+      }
     }
   }
 </style>

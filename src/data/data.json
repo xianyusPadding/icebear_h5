@@ -1,8 +1,8 @@
 {
   "studyVideo":{
-    "title": "学院视频",
+    "title": "白熊学院",
     "img": "https://icebear.me/Public/Mobile/images/home_academy.png",
-    "iconClass": "el-icon-caret-right",
+    "iconClass": "el-icon-service",
     "url": "./#/studyVideo",
     "subject": {
       "general": [
@@ -36,41 +36,19 @@
     }
   },
   "offerBBS":{
-    "title": "求职BBS",
+    "title": "白熊论坛",
     "img": "https://icebear.me/Public/Mobile/images/home_bbs.png",
     "iconClass": "el-icon-edit",
-    "url": "./#/offerBBS",
-    "tabs": [
-      {
-        "title": "首页",
-        "router": "/index",
-        "iconClass": "1"
-      },
-      {
-        "title": "我的提问",
-        "router": "/my-question",
-        "iconClass": "2"
-      },
-      {
-        "title": "我的收藏",
-        "router": "/my-collect",
-        "iconClass": "3"
-      },
-      {
-        "title": "个人中心",
-        "router": "/per-center",
-        "iconClass": "4"
-      }
-    ]
+    "url": "./#/offerBBS"
   },
   "enterprise":{
-    "title": "名企求职",
+    "title": "白熊求职",
     "img": "https://icebear.me/Public/Mobile/images/home_job.png",
     "iconClass": "el-icon-menu",
     "url": "./#/enterprise"
   },
   "wikipedia":{
-    "title": "在线百科",
+    "title": "白熊百科",
     "img": "https://icebear.me/Public/Mobile/images/home_baike.png",
     "iconClass": "el-icon-share",
     "url": "./#/wikipedia"

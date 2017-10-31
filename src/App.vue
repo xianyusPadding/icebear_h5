@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <keep-alive>
       <router-view/>
-    </keep-alive>
   </div>
 </template>
 
@@ -12,5 +10,19 @@
   }
 </script>
 
-<style lang='scss' scoped='' type='text/css'>
+<style lang='scss' type='text/css'>
+.el-tabs__header{
+  width: 100%;
+  text-align: center;
+  .el-tabs__nav{
+    width: 100%;
+    .el-tabs__item{
+      color: #B89D86;
+      padding: 0;
+    }
+    .el-tabs__item.is-active{
+      color: #482929
+    }
+  } 
+}
 </style>

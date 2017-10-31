@@ -27,7 +27,8 @@
     data () {
       return {
         enterprise: {},
-        data: {}
+        data: {},
+        activeName: 0
       }
     },
     components: {

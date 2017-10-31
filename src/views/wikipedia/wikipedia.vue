@@ -25,7 +25,8 @@
     data () {
       return {
         wikipedia: {},
-        data: {}
+        data: {},
+        activeName: 0
       }
     },
     components: {

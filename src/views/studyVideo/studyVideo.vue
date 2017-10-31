@@ -27,7 +27,8 @@
     data () {
       return {
         studyVideo: {},
-        data: {}
+        data: {},
+        activeName: 0
       }
     },
     components: {

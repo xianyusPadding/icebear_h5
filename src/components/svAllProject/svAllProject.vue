@@ -1,6 +1,6 @@
 <template>
   <div class="allProject">
-    <el-tabs v-model="activeName" @tab-click="handleClick" tab-position="top">
+    <el-tabs v-model="activeName" tab-position="top">
       <el-tab-pane label="通用课程" name="first">
         <ul class="general-Wrapper">
           <li v-for="item in studyVideo.subject.general" class="item"><a :href="studyVideo.url">
@@ -60,7 +60,7 @@
           top:50%;
           left:50%;
           color: #fff;
-          font-size: 25px;
+          font-size: 23px;
           -webkit-transform: translate(-50%, -50%);
         }
       }

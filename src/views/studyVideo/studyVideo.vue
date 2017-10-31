@@ -10,7 +10,14 @@
           </a></li>
         </ul>
       </el-tab-pane>
-      <el-tab-pane label="行业课程" name="second">行业课程</el-tab-pane>
+      <el-tab-pane label="行业课程" name="second">
+        <ul class="industry-Wrapper">
+          <li v-for="item in studyVideo.subject.industry" class="item"><a :href="studyVideo.url">
+            <img :src='item.img' alt="">
+            <span class="item-title">{{item.title}}</span>
+          </a></li>
+        </ul>
+      </el-tab-pane>
     </el-tabs>
   </div>
 </template>
@@ -59,6 +66,9 @@
 
 <style lang='scss' type='text/css'>
   #studyVideo{
+    .el-tabs{
+      // margin-top: 44px;
+    }
     .el-tabs__header{
       margin-bottom: 5px;
     }
@@ -74,7 +84,7 @@
         color: #482929
       }
     }
-    .general-Wrapper{
+    .general-Wrapper,.industry-Wrapper{
       background-color: #F6EBD6;
       .item{
         position: relative;

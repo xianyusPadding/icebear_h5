@@ -55,7 +55,9 @@
     background: #FFD734;
     text-align: center;
     line-height: 44px;
-    .main{ 
+    // position: fixed;
+    top: 0px;
+    .main{
       img{
         height: 34px;
       }
@@ -73,7 +75,7 @@
     .menu{
       position: relative;
       border-bottom: 1px solid #eee;
-      z-index: 2;
+      z-index: 3;
       background-color: #fff;
       li{
         width: 33%;

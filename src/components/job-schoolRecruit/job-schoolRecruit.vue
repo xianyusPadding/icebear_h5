@@ -34,7 +34,7 @@
     },
     methods: {
       allIndestry() {
-        this.allIndestryShow = !this.allIndestryShow
+        this.allIndestryShow = true
       }
     }
   }

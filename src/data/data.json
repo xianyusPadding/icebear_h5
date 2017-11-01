@@ -41,11 +41,11 @@
     "iconClass": "el-icon-edit",
     "url": "./#/offerBBS"
   },
-  "enterprise":{
+  "applyJob":{
     "title": "白熊求职",
     "img": "https://icebear.me/Public/Mobile/images/home_job.png",
     "iconClass": "el-icon-menu",
-    "url": "./#/enterprise"
+    "url": "./#/applyJob"
   },
   "wikipedia":{
     "title": "白熊百科",

@@ -8,7 +8,7 @@
       <h3>求职BBS</h3>
       <img src="https://icebear.me/Public/Mobile/images/home_bbs.png" alt="求职BBS">
     </router-link>
-    <router-link tab="div" class="tab-item" to="/enterprise">
+    <router-link tab="div" class="tab-item" to="/applyJob">
       <h3>名企求职</h3>
       <img src="https://icebear.me/Public/Mobile/images/home_job.png" alt="名企求职">
     </router-link>

@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Index from '@/views/index/index'
 import StudyVideo from '@/views/studyVideo/studyVideo'
 import OfferBBS from '@/views/offerBBS/offerBBS'
-import Enterprise from '@/views/enterprise/enterprise'
+import ApplyJob from '@/views/applyJob/applyJob'
 import Wikipedia from '@/views/wikipedia/wikipedia'
 
 Vue.use(Router)
@@ -26,9 +26,9 @@ export default new Router({
       component: OfferBBS
     },
     {
-      path: '/enterprise',
-      name: 'Enterprise',
-      component: Enterprise
+      path: '/applyJob',
+      name: 'ApplyJob',
+      component: ApplyJob
     },
     {
       path: '/wikipedia',

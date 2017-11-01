@@ -1,0 +1,34 @@
+{
+  "index": {
+    "title": "首页",
+    "type": {
+      "answer": {
+        "title": "问答",
+        "label": {
+          "all": "全部",
+          "writtenTest": "笔试",
+          "interview": "面试",
+          "resume": "简历",
+          "offer": "比offer",
+          "diff": "工作难题",
+          "plan": "职业规划"
+        }
+      },
+      "data": {
+        "title": "资料",
+        "label": {
+          "all": "全部",
+          "kitsDownload": "锦囊下载",
+          "writtenTopic": "笔试题目",
+          "interviewTopic": "笔试真题",
+          "resumFormwork": "简历模板",
+          "industryData": "行业数据",
+          "officeSkills": "办公技能",
+          "softwareRes": "软件资源"
+        }
+      }
+    }
+  },
+  "question": "我的提问",
+  "collect": "我的收藏"
+}

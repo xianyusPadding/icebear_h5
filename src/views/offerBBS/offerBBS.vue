@@ -4,7 +4,7 @@
     <div class="tab">
       <el-tabs v-model="activeName" tab-position="bottom">
         <el-tab-pane label="首页" name="0">
-          <bbs-index></bbs-index>
+          <bbs-index :data='bbsDataIndex'></bbs-index>
         </el-tab-pane>
         <el-tab-pane label="我的提问" name="1">
           <bbs-question></bbs-question>
@@ -27,6 +27,7 @@
   import bbsCollect from '@/components/bbsCollect/bbsCollect'
   import perCenter from '@/components/perCenter/perCenter'
   import {getData} from 'api/data'
+  import {getbbsData} from 'api/bbsData'
   import {ERR_OK} from 'api/config'
 
   export default {
@@ -35,6 +36,7 @@
         offerBBS: {},
         data: {},
         tabs: {},
+        bbsDataIndex: {},
         activeName: 0
       }
     },
@@ -47,6 +49,7 @@
     },
     created () {
       this._getData()
+      this._getbbsData()
     },
     methods: {
       _getData() {
@@ -55,6 +58,13 @@
             this.data = res.data
             this.offerBBS = res.data.offerBBS
             this.tabs = res.data.offerBBS.tabs
+          }
+        })
+      },
+      _getbbsData() {
+        getbbsData().then((res) => {
+          if (res.errno === ERR_OK) {
+            this.bbsDataIndex = res.data.index
           }
         })
       }

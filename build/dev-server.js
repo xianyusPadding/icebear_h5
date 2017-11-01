@@ -45,15 +45,15 @@ const hotMiddleware = require('webpack-hot-middleware')(compiler, {
 
 // enable hot-reload and state-preserving
 // compilation error display
-const appDate = require('../src/data/data.json')
+const appData = require('../src/data/data.json')
 const perCenter = require('../src/data/perCenter.json')
-const data = appDate;
+const bbsData = require('../src/data/bbsData.json')
 const apiRoutes = express.Router()
 
 apiRoutes.get('/data', function (req, res) {
   res.json({
     errno: 0,
-    data: data
+    data: appData
   })
 })
 
@@ -61,6 +61,13 @@ apiRoutes.get('/perCenter', function (req, res) {
   res.json({
     errno: 0,
     data: perCenter
+  })
+})
+
+apiRoutes.get('/bbsData', function (req, res) {
+  res.json({
+    errno: 0,
+    data: bbsData
   })
 })
 

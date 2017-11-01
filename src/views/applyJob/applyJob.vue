@@ -1,9 +1,10 @@
 <template>
   <div id="enterprise">
-    <m-header :dataItem='enterprise' :data='data'></m-header>
+    <m-header :dataItem='applyJob' :data='data'></m-header>
     <div class="tab">
       <el-tabs v-model="activeName" tab-position="bottom">
         <el-tab-pane label="内推" name="0">
+          <inPush></inPush>
         </el-tab-pane>
         <el-tab-pane label="校招实习" name="1">
         </el-tab-pane>
@@ -20,30 +21,32 @@
 <script type='text/ecmascript-6'>
   import mHeader from '@/components/mHeader/mHeader'
   import perCenter from '@/components/perCenter/perCenter'
+  import inPush from '@/components/inPush/inPush'
   import {getData} from 'api/data'
   import {ERR_OK} from 'api/config'
 
   export default {
     data () {
       return {
-        enterprise: {},
+        applyJob: {},
         data: {},
         activeName: 0
       }
     },
     components: {
       mHeader,
-      perCenter
+      perCenter,
+      inPush
     },
     created () {
-      this._getEnterprise()
+      this._getApplyJob()
       this._getData()
     },
     methods: {
-      _getEnterprise() {
+      _getApplyJob() {
         getData().then((res) => {
           if (res.errno === ERR_OK) {
-            this.enterprise = res.data.enterprise
+            this.applyJob = res.data.applyJob
           }
         })
       },

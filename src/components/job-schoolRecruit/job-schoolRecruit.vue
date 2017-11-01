@@ -2,7 +2,7 @@
   <div class="schoolRecruit">
     <div class="header">
       <div class="main">
-        <i class="el-icon-document main-icon" @click="dropCond()"> 全部行业</i>
+        <i class="el-icon-document main-icon" @click="allIndestry()"> 全部行业</i>
         <el-tabs v-model="activeName" class="fl-tabs">
           <el-tab-pane label="全职" name="1">
             <full-time></full-time>
@@ -13,27 +13,37 @@
         </el-tabs>
       </div>
     </div>
+    <div v-show="allIndestryShow" class="allIndestry"></div>
   </div>
 </template>
 
 <script type='text/ecmascript-6'>
-  import fullTime from '@/components/schoolRecruit/fullTime'
-  import internships from '@/components/schoolRecruit/internships'
+  import fullTime from '@/components/job-schoolRecruit/fullTime'
+  import internships from '@/components/job-schoolRecruit/internships'
   
   export default {
     data () {
       return {
-        activeName: '1'
+        activeName: '1',
+        allIndestryShow: false
       }
     },
     components: {
       fullTime,
       internships
+    },
+    methods: {
+      allIndestry() {
+        this.allIndestryShow = !this.allIndestryShow
+      }
     }
   }
 </script>
 
 <style lang='scss' type='text/css'>
+  .el-tabs__content{
+    overflow: visible;
+  }
   #enterprise .schoolRecruit{
     color: #482929;
     .header{
@@ -59,8 +69,15 @@
         }
       }
     }
-  }
-  .el-tabs__content{
-    overflow: visible;
+    .allIndestry{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      overflow: auto;
+      background: rgba(255,215,51,0.8);
+    }
   }
 </style>

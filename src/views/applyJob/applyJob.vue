@@ -4,12 +4,13 @@
     <div class="tab">
       <el-tabs v-model="activeName" tab-position="bottom">
         <el-tab-pane label="内推" name="0">
-          <inPush></inPush>
+          <job-inPush></job-inPush>
         </el-tab-pane>
         <el-tab-pane label="校招实习" name="1">
-          <schoolRecruit></schoolRecruit>
+          <job-school-recruit></job-school-recruit>
         </el-tab-pane>
         <el-tab-pane label="我的求职" name="2">
+          <my-job></my-job>
         </el-tab-pane>
         <el-tab-pane label="个人中心" name="3">
           <per-center></per-center>
@@ -22,8 +23,9 @@
 <script type='text/ecmascript-6'>
   import mHeader from '@/components/mHeader/mHeader'
   import perCenter from '@/components/perCenter/perCenter'
-  import inPush from '@/components/inPush/inPush'
-  import schoolRecruit from '@/components/schoolRecruit/schoolRecruit'
+  import jobInPush from '@/components/jobInPush/jobInPush'
+  import jobSchoolRecruit from '@/components/job-schoolRecruit/job-schoolRecruit'
+  import myJob from '@/components/myJob/myJob'
   import {getData} from 'api/data'
   import {ERR_OK} from 'api/config'
 
@@ -38,8 +40,9 @@
     components: {
       mHeader,
       perCenter,
-      inPush,
-      schoolRecruit
+      jobInPush,
+      jobSchoolRecruit,
+      myJob
     },
     created () {
       this._getApplyJob()

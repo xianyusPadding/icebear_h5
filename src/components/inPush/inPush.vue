@@ -22,21 +22,24 @@
     <div class="section">
       <ul class="inPush-Wrapper">
         <li class="inPush-item">
-          <div class="left">
+          <div class="top">
             <img src="https://icebear-1-001.oss-cn-shenzhen.aliyuncs.com/uploads/picture/2017-08-09/598ad1eb722a6.jpg" alt="58集团">
-            <span class="label">直通面试</span>
+            <div class="baseData">
+              <span class="name">58集团</span>
+              <span class="places">内推名额 200个</span>
+              <span class="quantity">职位数量 27个</span>
+            </div>
+            <span class="label">全职</span>
           </div>
-          <div class="right">
-            <span>58集团</span>
-            <span>内推名额 200个</span>
-            <span>职位数量 27个</span>
-            <span>全职</span>
-            <span>截取日期：2016-11-30</span>
+          <div class="middle">
+            <span class="label">直通面试</span>
+            <span class="date">截取日期：2016-11-30</span>
           </div>
           <div class="bottom">
             <span>国内领先分类信息网站</span>
           </div>
         </li>
+        
       </ul>
     </div>
   </div>
@@ -61,6 +64,7 @@
   .inPush{
     color: #482929;
     .header{
+      height: 40px;
       .main{
         height: 40px;
         border-bottom: 1px solid #eee;
@@ -78,6 +82,9 @@
         opacity: 0
       }
       .menu{
+        position: relative;
+        z-index: 3;
+        background-color: #fff;
         .conditions{
           padding: 20px 30px;
           button{
@@ -97,31 +104,59 @@
       }
     }
     .section{
+      background-color: #F6EBD6;
       .inPush-Wrapper{
         padding: 10px 30px;
         .inPush-item{
-          width: 100%;
+          width: calc(100% - 20px);
+          height: 190px;
           border: 1px solid #ccc;
+          border-radius: 4px;
           padding: 10px;
-          display: flex;
-          .left{
-            flex: 0 0 80px;
+          background-color: #fff;
+          .top{
+            position: relative;
             img{
-              width: 60px;
+              width: 90px;
+              height: 90px;
+              float: left;
+            }
+            .baseData{
+              float: left;
+              span{
+                display: block;
+                margin-left: 10px;
+                line-height: 20px;
+              }
+              .name{
+                margin-bottom: 20px;
+                font-size: 14px;
+              }
             }
             .label{
-              display: inline-block;
-              border: 1px solid #ccc;
-              padding: 3px 5px;
-              border-radius: 3px;
+              position: absolute;
+              right: 0px;
+              top: 45px;
+              padding: 3px 8px;
+              background-color: #cadfb1;
             }
           }
-          .right{
-            flex: 0 0 1;
-            align-self: center;
+          .middle{
+            margin-top: 110px;
+            .label{
+              padding: 3px 12px;
+              border: 1px solid #482929;
+              border-radius: 4px;
+            }
+            .date{
+              float: right;
+            }
           }
           .bottom{
-            
+            width: 100%;
+            // background-color: #eee;
+            margin-top: 40px;
+            font-size: 14px;
           }
         }
       }

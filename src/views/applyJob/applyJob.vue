@@ -7,6 +7,7 @@
           <inPush></inPush>
         </el-tab-pane>
         <el-tab-pane label="校招实习" name="1">
+          <schoolRecruit></schoolRecruit>
         </el-tab-pane>
         <el-tab-pane label="我的求职" name="2">
         </el-tab-pane>
@@ -22,6 +23,7 @@
   import mHeader from '@/components/mHeader/mHeader'
   import perCenter from '@/components/perCenter/perCenter'
   import inPush from '@/components/inPush/inPush'
+  import schoolRecruit from '@/components/schoolRecruit/schoolRecruit'
   import {getData} from 'api/data'
   import {ERR_OK} from 'api/config'
 
@@ -30,13 +32,14 @@
       return {
         applyJob: {},
         data: {},
-        activeName: 0
+        activeName: '1'
       }
     },
     components: {
       mHeader,
       perCenter,
-      inPush
+      inPush,
+      schoolRecruit
     },
     created () {
       this._getApplyJob()
